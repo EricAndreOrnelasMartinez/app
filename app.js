@@ -14,6 +14,6 @@ form.addEventListener('submit', function(e){
     
     .then(res => res.json())
     .then(data => {
-        document.write("<h3>" + data + "</h3>")
+        document.writeln("<h3>" + data + "</h3>")
     })
 })
