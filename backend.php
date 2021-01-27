@@ -2,7 +2,7 @@
 $con = mysqli_connect('localhost','root','Lasric.2018','api1');
 $nombre = $_POST['Nombre'];
 $apeido = $_POST['Apeido'];
-$edad = intval($_POST['edad']);
+$edad = $_POST['edad'];
 
 if($nombre === '' || $apeido === '' || $edad === ''){
     echo json_encode('completar campos');
