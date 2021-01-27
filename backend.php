@@ -7,7 +7,7 @@ $edad = $_POST['edad'];
 if($nombre === '' || $apeido === '' || $edad === ''){
     echo json_encode('completar campos');
 }else{
-    $result = mysqli_query($con,"INSERT INTO personas(Nombre,Apeido,Edad) VALUES('$nombre','$apeido',$edad);");
+    $result = mysqli_query($con,"INSERT INTO personas(Nombre,Apeido,Edad) VALUES('$nombre','$apeido','$edad');");
     if($result){
         echo json_encode('Registrado');
     }else{
