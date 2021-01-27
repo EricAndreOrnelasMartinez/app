@@ -4,7 +4,7 @@ const form = document.getElementById('Form')
 form.addEventListener('submit', function(e){
     e.preventDefault();
     
-    let datos = FormData(form);
+    let datos = new FormData(form);
 
     fetch('backend.php',{
         method: 'POST',
