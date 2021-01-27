@@ -1,4 +1,4 @@
-
+<?php
 
 $nombre = $_POST['$Nombre'];
 $apeido = $_POST['Apeido'];
@@ -9,3 +9,5 @@ if($nombre === '' || $apeido === '' || $edad === ''){
 }else{
     echo json_encode('todo bien');
 }
+
+?>
