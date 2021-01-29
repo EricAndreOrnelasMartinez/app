@@ -7,7 +7,7 @@ form.addEventListener('submit', function(e){
     let datos = new FormData(form);
 
     fetch('Login.php',{
-        method: 'POST',
+        method: 'GET',
         body: datos
     })
     
