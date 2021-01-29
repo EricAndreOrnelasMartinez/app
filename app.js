@@ -16,5 +16,6 @@ form.addEventListener('submit', function(e){
     .then(res => res.json())
     .then(data => {
         h3.innerHTML = data;
+        h3.className = 'ok';
     })
 })
