@@ -12,6 +12,7 @@ $answeremysql = mysqli_query($con, $sql);
 
 $turepass = implode(mysqli_fetch_assoc($answeremysql));
 
+if(!empty($user) && !empty($password)){
 if($password === $turepass){
     session_start();
     $sqlName = "SELECT Nombre FROM usuarios WHERE Mail='$user'";
@@ -22,6 +23,9 @@ if($password === $turepass){
     $_SESSION['last'] = implode(mysqli_fetch_assoc($answereLast));
     echo json_encode('1');
 }else {
+    echo json_encode('0');
+}
+}else{
     echo json_encode('0');
 }
 
