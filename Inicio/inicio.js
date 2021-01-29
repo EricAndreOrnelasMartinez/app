@@ -1,6 +1,6 @@
 
 const form = document.getElementById('form')
-const title = document.getElementById('hello')
+const h3 = document.getElementById('hello')
 let datos = new FormData();
 
 fetch('../PHP/inicio.php',{
@@ -15,6 +15,6 @@ fetch('../PHP/inicio.php',{
     if(aux === '0'){
         window.location.assign('../')
     }else{
-        title.innerHTML = "hola";
+        h3.innerHTML = smt;
     }
 })
