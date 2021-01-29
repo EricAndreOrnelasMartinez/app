@@ -1,14 +1,12 @@
 
 const form = document.getElementById('Form')
-const h3 = document.getElementById('res')
-let show = ''
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
     
     let datos = new FormData(form);
 
-    fetch('backend.php',{
+    fetch('Login.php',{
         method: 'POST',
         body: datos
     })
