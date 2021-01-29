@@ -3,8 +3,8 @@ error_reporting(E_ALL);
 ini_set('display_errors','1');
 $con = mysqli_connect('localhost','root','','contactos');
 
-$user = $_GET['user'];
-$password = $_GET['password'];
+$user = $_POST['user'];
+$password = $_POST['password'];
 
 $sql = "SELECT Contrasena FROM usuarios WHERE Mail='$user'";
 
