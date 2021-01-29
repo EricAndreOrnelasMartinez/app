@@ -15,6 +15,6 @@ fetch('../PHP/inicio.php',{
     if(aux === '0'){
         window.location.assign('../')
     }else{
-        title.innerHTML = smt;
+        title.innerHTML = "hola";
     }
 })
