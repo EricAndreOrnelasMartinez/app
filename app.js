@@ -1,5 +1,6 @@
 
 const form = document.getElementById('Form')
+const h3 = document.getElementById('res')
 let show = ''
 
 form.addEventListener('submit', function(e){
@@ -14,8 +15,6 @@ form.addEventListener('submit', function(e){
     
     .then(res => res.json())
     .then(data => {
-        document.writeln(
-            '<h3 class="ok">' + data + '</h3>'
-        )
+        h3.innerHTML = data;
     })
 })

@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect('localhost','root','Lasric.2018','api1');
+$con = mysqli_connect('localhost','root','','api1');
 $nombre = $_POST['Nombre'];
 $apeido = $_POST['Apeido'];
 $edad = $_POST['Edad'];
