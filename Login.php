@@ -1,8 +1,8 @@
 <?php
 $con = mysqli_connect('localhost','root','','contactos');
 
-$user = $_POST['user'];
-$password = $_POST['password'];
+$user = $_GET['user'];
+$password = $_GET['password'];
 
 $sql = "SELECT Contrasena FROM usuarios WHERE Mail='$user'";
 
