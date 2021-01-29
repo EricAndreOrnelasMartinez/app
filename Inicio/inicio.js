@@ -10,10 +10,11 @@ fetch('../PHP/inicio.php',{
 
 .then(res => res.json())
 .then(data => {
+    let smt = "Hola " + data + "!!" ;
     let aux = data;
     if(aux === '0'){
         window.location.assign('../')
     }else{
-        title.innerHTML = "Hola " + data + "!!" 
+        title.innerHTML = smt;
     }
 })
