@@ -7,7 +7,7 @@ form.addEventListener('submit', function(e){
     
     let datos = new FormData(form);
 
-    fetch('Login.php',{
+    fetch('PHP/Login.php',{
         method: 'POST',
         body: datos
     })
@@ -16,7 +16,7 @@ form.addEventListener('submit', function(e){
     .then(data => {
         let aux = data;
         if(aux === '1'){
-            window.location.assign('Inicio/index.html');
+            window.location.assign('Inicio/');
         }else{
             h3.innerHTML = 'Usuario o contraseña incorrectos'
             h3.className = 'ok'
