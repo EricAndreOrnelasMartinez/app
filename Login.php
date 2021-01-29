@@ -20,9 +20,9 @@ if($password === $turepass){
     $sqlLast = "SELECT Apeido FROM usuarios WHERE Mail='$user'";
     $answereLast = mysqli_query($con, $sqlLast);
     $_SESSION['last'] = implode(mysqli_fetch_assoc($answereLast));
-    header('Location:Inicio/index.html');
+    echo json_encode('1');
 }else {
-    echo json_encode('Mail o contraseña incorrectos');
+    echo json_encode('0');
 }
 
 ?>

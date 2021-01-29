@@ -1,5 +1,6 @@
 
 const form = document.getElementById('Form')
+const h3 = document.getElementById('res')
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
@@ -13,7 +14,12 @@ form.addEventListener('submit', function(e){
     
     .then(res => res.json())
     .then(data => {
-        h3.innerHTML = data;
-        h3.className = 'ok';
+        let aux = data;
+        if(aux === '1'){
+            window.location.assign('Inicio/index.html');
+        }else{
+            h3.innerHTML = 'Usuario o contraseña incorrectos'
+            h3.className = 'ok'
+        }
     })
 })
