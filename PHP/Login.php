@@ -21,6 +21,9 @@ if($password === $turepass){
     $sqlLast = "SELECT Apeido FROM usuarios WHERE Mail='$user'";
     $answereLast = mysqli_query($con, $sqlLast);
     $_SESSION['last'] = implode(mysqli_fetch_assoc($answereLast));
+    $sqlID = "SELECT ID FROM usuarios WHERE Mail='$user'";
+    $answereID = mysqli_query($con, $sqlID);
+    $_SESSION['ID'] = implode(mysqli_fetch_assoc($answereID));
     echo json_encode('1');
 }else {
     echo json_encode('0');
