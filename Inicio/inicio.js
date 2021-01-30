@@ -25,5 +25,5 @@ fetch('../PHP/contacts.php',{
 
 .then(res => res.json())
 .then(data => {
-    console.log(data['ID']);
+    console.log(data['0']);
 })
