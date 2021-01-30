@@ -19,7 +19,11 @@ fetch('../PHP/inicio.php',{
     }
 })
 
-form2.addEventListener('submit', e =>{
-    e.preventDefault();
-    let form2 = new FormData(form2);
+fetch('../PHP/contacts.php',{
+    method: 'POST'
+})
+
+.then(res => res.json())
+.then(data => {
+    console.log(data);
 })

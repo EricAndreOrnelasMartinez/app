@@ -23,6 +23,7 @@
         }else{
             echo json_encode('0');
         }
+        $con->close();
     }
 
 
