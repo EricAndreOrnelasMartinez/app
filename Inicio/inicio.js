@@ -26,6 +26,7 @@ fetch('../PHP/contacts.php',{
 .then(res => res.json())
 .then(data => {
     let output = '';
+    console.log(data)
     for(let i in data){
         output += `<div class="con">
         <p>Nombre: ${data[i].Nombre}</p><br>
