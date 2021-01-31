@@ -1,4 +1,4 @@
-const form2 = document.getElementById('contacts')
+const container = document.getElementById('container')
 const form = document.getElementById('form')
 const h3 = document.getElementById('hello')
 let datos = new FormData();
@@ -25,5 +25,14 @@ fetch('../PHP/contacts.php',{
 
 .then(res => res.json())
 .then(data => {
-    console.log(data);
+    let output = '';
+    for(let i in data){
+        output += `<div class="con">
+        <p>Nombre: ${data[i].Nombre}</p><br>
+        <p>Apeido: ${data[i].Apeido}</p><br>
+        <p>Mail: ${data[i].Mail}</p><br>
+        <p>Telefono: ${data[i].Telefono}</p><br>
+        </div>`
+    }
+    container.innerHTML = output;
 })
