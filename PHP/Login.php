@@ -31,5 +31,4 @@ if($password === $turepass){
 }else{
     echo json_encode('0');
 }
-
 ?>
