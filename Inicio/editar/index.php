@@ -36,4 +36,5 @@ if(!isset($_SESSION['name'])){
         <button type="submit">Modificar</button>
     </form>
 </body>
+<script src="editar.js"></script>
 </html>
