@@ -33,6 +33,11 @@ contact.addEventListener('submit', e =>{
         let aux = data;
         if(aux === '1'){
             h3.innerHTML = "Registrado";
+            document.querySelector('.n').value = '';
+            document.querySelector('.a').value = '';
+            document.querySelector('.m').value = '';
+            document.querySelector('.t').value = '';
+
         }else{
             h3.innerHTML = "500: algo salió mal";
         }
