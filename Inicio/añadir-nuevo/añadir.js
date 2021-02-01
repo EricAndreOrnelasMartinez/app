@@ -6,10 +6,7 @@ const h3 = document.getElementById('in')
 
 let datos = new FormData();
 
-fetch('../../PHP/añadir.php', {
-    method: 'POST',
-    body: datos
-})
+fetch('../../PHP/añadir.php')
 
 .then(res => res.json())
 .then(data =>{
@@ -44,6 +41,6 @@ contact.addEventListener('submit', e =>{
     })
 }else{
     h3.innerHTML = "Llenar todos los campos"
-    h3.className = "ok"
+    h3.className = "bad"
 }
 })

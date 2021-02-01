@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../estilo.css">
     <title>Añadir</title>
 </head>
 <body>
-    <form id="form">
-        <input type="hidden" name="ans" value="ack">
-    </form>
-    <h3>Añadir contacto</h3>
     <form id="new">
+        <h3>Añadir contacto</h3>
         <input type="hidden" name="ID">
         <input type="text" name="name" placeholder="Nombre" class="n">
         <input type="text" name="last" placeholder="Apeido" class="a">
         <input type="text" name="Mail" placeholder="Mail" class="m">
         <input type="text" name="phone" placeholder="Teléfono" class="t">
         <button type="submit">Añadir</button>
+        <a href="../"><button type="button">volver</button></a>
+        <h3 id="in"></h3>
     </form>
-    <a href="../"><button type="button">volver</button></a>
-    <h3 id="in"></h3>
 </body>
 <script src="añadir.js"></script>
 </html> 

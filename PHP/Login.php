@@ -8,7 +8,7 @@ $password = $_POST['password'];
 
 $sql = "SELECT Contrasena FROM usuarios WHERE Mail='$user'";
 
-$answeremysql = mysqli_query($con, $sql);
+$answeremysql = mysqli_query($con, $sql) or die(exit(json_encode('0')));
 
 $turepass = implode(mysqli_fetch_assoc($answeremysql));
 

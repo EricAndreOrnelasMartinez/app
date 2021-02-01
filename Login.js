@@ -19,7 +19,10 @@ form.addEventListener('submit', function(e){
             window.location.assign('Inicio/');
         }else{
             h3.innerHTML = 'Usuario o contraseña incorrectos'
-            h3.className = 'ok'
+            h3.className = 'bad'
         }
+    }).catch(err =>{
+        h3.innerHTML = 'Usuario o contraseña incorrectos'
+        h3.className = 'bad'
     })
 })

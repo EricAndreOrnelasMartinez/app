@@ -1,10 +1,84 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+	padding: 0;
+	margin: 0;
+	font-family: century gothic;
+	text-align: center;
 }
 
-.ok{
-    background-color: red;
-    text-align: center;
-    color: black;
+body{
+	background-color: rgb(114, 5, 5);
+}
+form {
+	padding: 50px 20px;
+	background-color: rgb(0, 0, 0);
+	margin: calc(25% + 100px);
+	margin-top: 70px;
+	padding-top: 28px;
+	margin-bottom: 30px
+}
+
+h1 {
+	text-align: center;
+	padding: 12px;
+	color: #444
+}
+
+input {
+	width: calc(100% - 50px);
+	padding: 9px;
+	margin: auto;
+	margin-top: 12px;
+	font-size: 16px
+}
+
+input[type='submit']{
+	background-color: rgb(238, 68, 68);
+	color: #fff;
+    width: calc(80% - 20px);
+    padding: 9px;
+	margin: 0 10%;
+	margin-top: 22px;
+	border: none;
+}
+
+button{
+	background-color: rgb(238, 68, 68);
+	color: #fff;
+    width: calc(80% - 20px);
+    padding: 9px;
+	margin: 0 10%;
+	margin-top: 22px;
+	border: none;
+}
+.ok {
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #1e6;
+	color: #fff
+}
+.bad {
+	text-align: center;
+    width: calc(80% - 20px);
+	padding: 12px;
+    background-color: #a22;
+    padding: 9px;
+	margin: 0 10%;
+	margin-top: 22px;
+	color: #fff
+}
+image{
+	align-content: center;
+}
+h3{
+	color: white;
+}
+button:hover{
+	background-color: black;
+}
+input[type='submit']:hover{
+    background-color: black;
+}
+.hi{
+    visibility: hidden;
 }
