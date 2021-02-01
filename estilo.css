@@ -52,9 +52,12 @@ button{
 }
 .ok {
 	text-align: center;
-	width: 100%;
+    width: calc(80% - 20px);
 	padding: 12px;
-	background-color: #1e6;
+    background-color: rgb(34, 170, 57);
+    padding: 9px;
+	margin: 0 10%;
+	margin-top: 22px;
 	color: #fff
 }
 .bad {

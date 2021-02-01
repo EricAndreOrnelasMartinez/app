@@ -14,6 +14,7 @@ form.addEventListener('submit', e =>{
         let aux = data
         if(aux === '1'){
             h3.innerHTML = 'Completado!'
+            h3.className = 'ok';
         }else{
             h3.innerHTML = '500: algo salió mal'
         }
