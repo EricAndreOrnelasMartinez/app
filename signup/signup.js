@@ -17,6 +17,11 @@ form.addEventListener('submit', e =>{
         let aux = data
         if(aux === '1'){
             document.querySelector('.res').innerHTML = 'registrado!!'
+            document.querySelector('.pwd1').value = '';
+            document.querySelector('.pwd2').value = '';
+            document.querySelector('.nm').value = '';
+            document.querySelector('.lt').value = '';
+            document.querySelector('.ml').value = '';
         }else{
             document.querySelector('.res').innerHTML = 'Correo existente'
         }
