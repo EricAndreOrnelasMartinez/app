@@ -1,5 +1,6 @@
 
 const form = document.getElementById('form')
+const h3 = document.getElementById('res')
 
 form.addEventListener('submit', e =>{
     e.preventDefault();
@@ -10,6 +11,11 @@ form.addEventListener('submit', e =>{
     })
     .then(res => res.json())
     .then(data => {
-        console.log(data);
+        let aux = data
+        if(aux === '1'){
+            h3.innerHTML = 'Completado!'
+        }else{
+            h3.innerHTML = '500: algo salió mal'
+        }
     })
 });

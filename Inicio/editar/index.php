@@ -35,6 +35,8 @@ if(!isset($_SESSION['name'])){
         <input type="text" name="phone" value="<?php echo implode(mysqli_fetch_assoc($telR)) ?>">
         <button type="submit">Modificar</button>
     </form>
+    <a href="../"><button type="button">volver</button></a>
+    <h3 id="res"></h3>
 </body>
 <script src="editar.js"></script>
 </html>
