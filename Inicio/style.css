@@ -31,6 +31,8 @@ button{
     position: relative;
     left: 30%;
     margin: 20px;
+    border-radius: 20px;
+    padding: 7px;
 }
 
 .js{
@@ -41,4 +43,10 @@ button{
     color: white;
     position: relative;
     left: 1%;
+}
+button:hover{
+    background-color: black;
+}
+.js:hover{
+    background-color: black;
 }
