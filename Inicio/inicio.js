@@ -33,8 +33,8 @@ fetch('../PHP/contacts.php',{
         <p>Apeido: ${data[i].Apeido}</p><br>
         <p>Mail: ${data[i].Mail}</p><br>
         <p>Telefono: ${data[i].Telefono}</p><br>
-        <a href="../PHP/deletec.php?id=${data[i].ID_C}"><button type="button">Eliminar</button></a>
-        <a href="editar/?id=${data[i].ID_C}"><button type="button">Editar</button></a>
+        <a href="../PHP/deletec.php?id=${data[i].ID_C}"><button class="js" type="button">Eliminar</button></a>
+        <a href="editar/?id=${data[i].ID_C}"><button class="js" type="button">Editar</button></a>
         </div>`
     }
     container.innerHTML = output;

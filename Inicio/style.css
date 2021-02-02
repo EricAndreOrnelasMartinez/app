@@ -6,8 +6,39 @@ body{
     background-color: rgb(114, 5, 5);
     width: 100%;
 }
-h1{
+h3{
     text-align: center;
     background-color: black;
     color: white;
+    padding: 7px;
+}
+button{
+    margin: 10px;
+    padding: 5px;
+    background-color:  rgb(14, 4, 153);
+    border: none;
+    color: white;
+    position: relative;
+    left: 45%;
+}
+
+.con{
+    background-color: black;
+    color: white;
+    width: 40%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    left: 30%;
+    margin: 20px;
+}
+
+.js{
+    margin: 10px;
+    padding: 5px;
+    background-color:  rgb(14, 4, 153);
+    border: none;
+    color: white;
+    position: relative;
+    left: 1%;
 }
