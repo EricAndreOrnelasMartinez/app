@@ -24,7 +24,7 @@ if(!isset($_SESSION['name'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../estilo.css">
-    <link rel="shortcut icon" href="Imagenes/icono.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../Imagenes/icono.png" type="image/x-icon">
     <title>Editar</title>
 </head>
 <body>
