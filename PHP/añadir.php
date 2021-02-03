@@ -10,7 +10,7 @@
 }
 
     if(!empty($_POST['name'])){
-        $con = mysqli_connect('localhost','root','','contactos');
+        $con = mysqli_connect('localhost','root','Lasric.2018','contactos');
         $id = $_SESSION['ID'];
         $name = $_POST['name'];
         $last = $_POST['last'];

@@ -6,7 +6,7 @@ if(!isset($_SESSION['name'])){
     header("Location:../../");
 }else{
     $id = $_GET['id'];
-    $con = mysqli_connect('localhost','root','','contactos');
+    $con = mysqli_connect('localhost','root','Lasric.2018','contactos');
     $sqlName = "SELECT Nombre FROM contactos WHERE ID_C=$id";
     $nameR = mysqli_query($con, $sqlName);
     $sqlLast = "SELECT Apeido FROM contactos WHERE ID_C=$id";

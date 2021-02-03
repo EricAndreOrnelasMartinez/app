@@ -2,7 +2,7 @@
 
 session_start();
 
-$con = mysqli_connect('localhost','root','','contactos');
+$con = mysqli_connect('localhost','root','Lasric.2018','contactos');
 $aux = $_SESSION['ID'];
 $sql = "SELECT * FROM contactos WHERE ID=$aux;";
 $answere = mysqli_query($con, $sql);

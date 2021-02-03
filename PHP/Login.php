@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors','1');
-$con = mysqli_connect('localhost','root','','contactos');
+$con = mysqli_connect('localhost','root','Lasric.2018','contactos');
 
 $user = $_POST['user'];
 $password = $_POST['password'];

@@ -1,6 +1,6 @@
 <?php 
 
-$con = mysqli_connect('localhost','root','','contactos');
+$con = mysqli_connect('localhost','root','Lasric.2018','contactos');
 $name = $_POST['name'];
 $last = $_POST['last'];
 $mail = $_POST['mail'];
